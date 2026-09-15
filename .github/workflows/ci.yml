@@ -12,9 +12,6 @@ jobs:
       - name: Baixar Código-Fonte
         uses: actions/checkout@v4
 
-      - name: Teste de erro intencional
-        run: exit 1
-
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
