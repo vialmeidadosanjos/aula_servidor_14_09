@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Executar Linter
-        run: npm run Lint
+        run: npm run Lint --fix
 
       - name: Executar Testes Automatizados
         run: npm test
