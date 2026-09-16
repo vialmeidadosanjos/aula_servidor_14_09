@@ -25,10 +25,11 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/minha-aplicacao
+          images: vinicinnanjos/minha-aplicacao
           tags: |
             type=raw,value=latest
             type=sha,format=short
+
 
       - name: Construir e Publicar imagem
         uses: docker/build-push-action@v5
